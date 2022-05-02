@@ -21,13 +21,13 @@ jobs:
       - run:
           name: install backend deps
           command: npm run backend:install 
-      # build the serve and ui
-      # - run:
-      #     name: buildend frontend
-      #     command: npm run frontend:build
-      # - run:
-      #     name: buildend back
-      #     command: npm run backend:build
+      # build front and the back end
+      - run:
+          name: buildend frontend
+          command: npm run frontend:build
+      - run:
+          name: buildend back
+          command: npm run backend:build
       # # deploy the ui to s3
       # - run:
       #     name: deploy ui to s3

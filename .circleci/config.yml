@@ -23,10 +23,10 @@ jobs:
           command: npm run backend:install 
       # build front and the back end
       - run:
-          name: buildend frontend
+          name: build frontend
           command: npm run frontend:build
       - run:
-          name: buildend back
+          name: builde backend
           command: npm run backend:build
       # # deploy the ui to s3
       # - run:

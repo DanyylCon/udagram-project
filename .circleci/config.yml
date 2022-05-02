@@ -1,4 +1,4 @@
-  version: 2.1
+version: 2.1
 orbs:
   # orbs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@4.1.0
@@ -21,7 +21,7 @@ jobs:
       - run:
           name: install backend deps
           command: npm run backend:install 
-      # # build the serve and ui
+      # build the serve and ui
       # - run:
       #     name: buildend frontend
       #     command: npm run frontend:build

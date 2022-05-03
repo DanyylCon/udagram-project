@@ -15,6 +15,8 @@ jobs:
       - checkout
       # set up aws-cli
       - aws-cli/setup
+      # set up eb-cli
+      - eb/setup
       # install dependencies in both apps
       - run:
           name: install frontend deps

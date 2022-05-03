@@ -31,12 +31,12 @@ jobs:
       - run:
           name: builde backend
           command: npm run backend:build
-      # # deploy the ui to s3
-      # - run:
-      #     name: deploy ui to s3
-      #     command: npm run frontend:deploy
       # deploy the backend to eb
       - run:
           name: deploy backend to ebs
           command: npm run backend:deploy
+      # # deploy the ui to s3
+      - run:
+          name: deploy ui to s3
+          command: npm run frontend:deploy
       
